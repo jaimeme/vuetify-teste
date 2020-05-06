@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar color="deep-purple accent-4" dense dark>
+  <v-app-bar color="deep-purple accent-2" dense dark>
     <!-- dense retira os paddings que vem como padrão -->
     <v-app-bar-nav-icon></v-app-bar-nav-icon>
     <!-- icone nav-bar padrão sanduíche -->
@@ -30,6 +30,7 @@ export default {
       itemLista: [
         { titulo: "Registrar", href: "" },
         { titulo: "Entrar", href: "" }
+        // definindo itens dentro dos menus e suas rotas
       ]
     };
   }

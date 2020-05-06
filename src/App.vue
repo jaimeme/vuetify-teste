@@ -1,16 +1,18 @@
 <template>
   <v-app>
-    <p>Hello He4rt</p>
     <Header />
+    <Main />
   </v-app>
 </template>
 
 <script>
 import Header from "./components/header/Header";
+import Main from "./components/Main";
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    Main
   },
   data() {
     return {};

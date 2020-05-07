@@ -1,5 +1,5 @@
 <template>
-  <router-view />
+  <p>Olá de /login</p>
 </template>
 
 <script>

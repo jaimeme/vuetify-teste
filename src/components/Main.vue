@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <div>
-      <Header />
+      <!-- <Header /> -->
       <section class="d-flex flex-column justify-center align-center pt-10">
         <img :src="require('@/assets/logo.png')" width="200px" alt="Logo Vue" class="pt-5" />
         <!-- pt-10(padding top) -- pa-2(padding "all")-->

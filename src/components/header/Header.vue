@@ -29,7 +29,7 @@ export default {
     return {
       itemLista: [
         { titulo: "Registrar", href: "" },
-        { titulo: "Entrar", href: "" }
+        { titulo: "Entrar", href: "/login" }
         // definindo itens dentro dos menus e suas rotas
       ]
     };

@@ -15,7 +15,11 @@
         </v-btn>
       </template>
       <v-list>
-        <v-list-item v-for="({titulo,href},index) in itemLista" :key="index" @click="()=>{}">
+        <v-list-item
+          v-for="({titulo,href},index) in itemLista"
+          :key="index"
+          @click="redirecionar(href)"
+        >
           <v-list-item-title>{{titulo}}</v-list-item-title>
         </v-list-item>
       </v-list>
@@ -33,6 +37,11 @@ export default {
         // definindo itens dentro dos menus e suas rotas
       ]
     };
+  },
+  methods: {
+    redirecionar(href) {
+      this.$router.push(href);
+    }
   }
 };
 </script>

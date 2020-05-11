@@ -26,7 +26,7 @@
                     >Clique aqui</router-link>
                   </span>
                 </v-card-text>
-                <v-btn color="deep-purple" dark>Entrar</v-btn>
+                <v-btn color="deep-purple" dark @click.prevent="enviarFormulario()">Entrar</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -43,6 +43,22 @@ export default {
       conta: "",
       senha: ""
     };
+  },
+  methods: {
+    enviarFormulario() {
+      //validação futura
+      //GET para a rota em uma possível API
+      localStorage.setItem(
+        "CONTA",
+        JSON.stringify({
+          conta: this.conta,
+          senha: this.senha
+        })
+      );
+      console.log("TUDO CERTO!");
+      console.log(JSON.parse(localStorage.getItem("CONTA")));
+      this.$router.push("/dashboard");
+    }
   }
 };
 </script>
